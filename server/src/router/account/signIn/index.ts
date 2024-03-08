@@ -17,7 +17,7 @@ const router = express.Router()
 router.use(async (req,res)=>{
     try{
         const account = await Account.findOne({username: req.body.payload.username})
-        // console.log(req.body.payload)
+        // console.log(req.body.payload.username)
         // console.log(account)
         if(account?.password === undefined){
             res.status(200).json({message: "Wrong credential info"})

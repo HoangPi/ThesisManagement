@@ -2,6 +2,7 @@ import express from 'express'
 import Session from '../../models/session'
 import gettheses from './gettheses'
 import addthesis from './addthesis'
+import activethesis from './activethesis'
 
 const router = express.Router()
 
@@ -22,5 +23,6 @@ router.use(async (req,res,next) => {
 })
 router.post('/gettheses',gettheses)
 router.post('/addthesis',addthesis)
+router.post('/activatethesis',activethesis)
 
 export default router
