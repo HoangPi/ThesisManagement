@@ -35,6 +35,9 @@ export const InstructorNavBar = () =>{
                             <li className="nav-item">
                                 <Link className="nav-link" to = "/thesismanager">Thesis manager</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to = "/mytheses">Active theses</Link>
+                            </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to = "/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Account

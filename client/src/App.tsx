@@ -11,6 +11,7 @@ import { deleteUser, saveUser } from './store/userinfo'
 import { Profile } from './pages/profile'
 import { ThesisManager } from './pages/instructor/thesisManager'
 import { JoinThesis } from './pages/student/joinThesis'
+import { ActiveTheses } from './pages/instructor/activeTheses'
 
 
 function App() {
@@ -59,11 +60,12 @@ function App() {
           <Route path='/profile' element= {<Profile></Profile>}></Route>
           <Route path='/thesismanager' element = {<ThesisManager/>}/>
           <Route path='/jointhesis' element={<JoinThesis/>}/>
+          <Route path='/mytheses' element={<ActiveTheses/>}/>
         </Routes>
-        <h3>{token.sessionid}</h3>
+        {/* <h3>{token.sessionid}</h3>
         <h3>{token.salt}</h3>
         <h3>{token.key}</h3>
-        <h3>{user}</h3>
+        <h3>{user}</h3> */}
       </BrowserRouter>
     </>
   )

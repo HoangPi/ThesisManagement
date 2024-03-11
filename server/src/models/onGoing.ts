@@ -14,10 +14,6 @@ const onGoingSchema = new Schema({
         required: true,
         kind: 'unique',
         ref: 'user',
-        message: 'Error, expected `username` to be unique. Value: `JohnSmith`',
-        name: 'ValidatorError',
-        path: 'student',
-        value: 'JohnSmith'
     }
 })
 onGoingSchema.plugin(mongooseUniqueValidator);
